@@ -1,4 +1,4 @@
-# stockwin-thinkpool
+# stockwin-thinkpool (한경TV)
 
 ## Build Setup
 
