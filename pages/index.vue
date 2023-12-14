@@ -1,7 +1,6 @@
 <template>
   <div>
-    Index Page...!
-    <br />
+    아무거나
     <SampleComp />
   </div>
 </template>
@@ -16,3 +15,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+@import '~/assets/css/main.css';
+</style>
