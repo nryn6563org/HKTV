@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import SampleComp from '@/components/SampleComp'
+import SampleComp from '@/components/SampleComp';
 
 export default {
-  layout: 'defaultLayout',
   components: {
     SampleComp
-  }
-}
+  },
+  layout: 'defaultLayout',
+};
 </script>
 
 <style scoped>

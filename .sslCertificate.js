@@ -5,13 +5,13 @@ const sslCertificate = {
   https: true,
   https: {
     key: fs.readFileSync(
-      "/Users/kangjinhwan/workspace/WILD.thinkpool.com/newkey.pem"
+      "/Users/nryn6563/workspace/WILD.thinkpool.com/newkey.pem"
     ),
     cert: fs.readFileSync(
-      "/Users/kangjinhwan/workspace/WILD.thinkpool.com/cert.pem"
+      "/Users/nryn6563/workspace/WILD.thinkpool.com/cert.pem"
     ),
     ca: fs.readFileSync(
-      "/Users/kangjinhwan/workspace/WILD.thinkpool.com/DigiCertCA.pem"
+      "/Users/nryn6563/workspace/WILD.thinkpool.com/DigiCertCA.pem"
     )
   }
 };

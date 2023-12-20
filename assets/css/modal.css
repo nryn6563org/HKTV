@@ -1,0 +1,15 @@
+.modal {
+  @apply fixed w-full h-full flex justify-center items-center inset-0 bg-black bg-opacity-60;
+}
+.modal-content {
+  @apply relative w-[200px] h-[150px] bg-white rounded-xl flex flex-col justify-between;
+}
+.modal-header{
+  @apply relative w-full flex justify-center items-center;
+}
+.modal-header .modal-close{
+  @apply absolute top-0 right-2
+}
+.modal-footer{
+  @apply relative w-full flex justify-center items-center gap-2.5;
+}
