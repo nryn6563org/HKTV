@@ -1,0 +1,201 @@
+.todayCatch{
+  @apply px-5 pb-[50px] bg-[#333340]
+}
+.issueCard{
+  @apply bg-white w-full mx-auto rounded-[10px] overflow-hidden p-[15px_10px]
+}
+.issueCard .top{
+  @apply w-full relative h-[95px]
+}
+.issueCard .top .bullet{
+  @apply absolute inset-0 h-5 bg-[#8c67da] rounded-full px-2.5 inline-flex w-fit items-center
+}
+.issueCard .top .bullet span{
+  @apply font-medium text-[12px] text-white
+}
+.issueCard .top .obj{
+  @apply absolute top-[33px] left-0 flex gap-2 items-end
+}
+.issueCard .top .obj strong{
+  @apply text-[16px] font-bold block leading-6
+}
+.issueCard .top .obj span{
+  @apply text-[#999] text-[12px] block leading-[18px]
+}
+.issueCard .top .per{
+  @apply absolute right-0 top-[13px] text-[12px] font-medium leading-[18px]
+}
+.issueCard .top .per span.up{
+  @apply text-[#E81A1A]
+}
+.issueCard .top .per span.dn{
+  @apply text-[#2073EF]
+}
+.issueCard .top .price{
+  @apply absolute top-[33px] right-0 text-[15px] leading-[22px] text-black
+}
+.issueCard .top .stockInfo{
+  @apply absolute bottom-0 left-0 rounded-full bg-[#F4F6F9] flex justify-center h-6 items-center w-full
+}
+.issueCard .top .stockInfo div{
+  @apply inline-flex gap-1 items-center after:content-[''] after:w-[1px] after:h-[14px] after:bg-[#dfe6ef] after:mx-1
+}
+.issueCard .top .stockInfo div span{
+  @apply text-[#666] text-[10px] tracking-[-0.2px]
+}
+.issueCard .top .stockInfo div em{
+  @apply text-[11px] text-black font-medium tracking-[-0.22px] not-italic
+}
+.issueCard .top .stockInfo div em.up{
+  @apply text-[#E81A1A]
+}
+.issueCard .top .stockInfo div em.dn{
+  @apply text-[#2073EF]
+}
+.issueCard .top .stockInfo div:last-child{
+  @apply after:hidden
+}
+.issueCard .chart{
+  @apply w-full pt-[15px]
+}
+.todayCatch .swiper-pagination-bullet{
+  @apply w-2 h-1 rounded-[1px] bg-[#6e6f77] opacity-100 p-0 m-0
+}
+.todayCatch .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  @apply w-5 h-1 rounded-[1px] bg-[#E0E1E9]
+}
+.todayCatch .swiper-pagination{
+  @apply p-0 h-1 flex items-center justify-center bottom-[30px] !important;
+}
+
+.quickIssueItem{
+  @apply w-full bg-white p-[30px_20px_50px]
+}
+.quickIssueItem > .title{
+  @apply w-full leading-6 text-[18px] font-bold text-[#292929] pb-5
+}
+.quickIssueItem > .title em{
+  @apply text-[#8b68ef] not-italic
+}
+
+.quickIssueItem .banner{
+  @apply w-full h-[50px] rounded-[10px] bg-[#F6F1FF] relative flex items-center justify-between px-[15px] text-[#8B68EF] text-[16px] tracking-[-0.24px]
+  after:w-6 after:h-6 after:rounded-full after:bg-[#E9DDFE] after:flex after:items-center after:justify-center
+  after:content-['\003E'] after:text-[#8B68EF] after:text-[13px] after:font-bold
+}
+.quickIssueItem .banner em{
+  @apply not-italic font-bold
+}
+.quickIssueItem .top_issue{
+  @apply bg-[#8b68ef] rounded-[10px] w-full p-2.5 pt-[15px] mt-5
+}
+.quickIssueItem .top_issue > strong{
+  @apply w-full block h-6 leading-6 text-center text-[#d2c2ff] font-bold text-[16px]
+}
+.quickIssueItem .top_issue > strong em{
+  @apply not-italic text-white
+}
+.quickIssueItem .top_issue .list{
+  @apply mt-2.5 bg-white w-full rounded-[8px] p-3 flex flex-col gap-2
+}
+.quickIssueItem .top_issue .list > div{
+  @apply w-full flex gap-2 items-center
+}
+.quickIssueItem .top_issue .list > div .date{
+  @apply block w-10 text-[13px] text-[#666] text-center
+}
+.quickIssueItem .top_issue .list > div .obj{
+  @apply block w-[calc(100%-156px)] truncate text-[#333] text-[15px] font-bold
+}
+.quickIssueItem .top_issue .list > div .per{
+  @apply w-[100px] flex justify-center items-center h-[25px] rounded-[4px] bg-[#fdecec] text-[#E81A1A] text-[13px]
+}
+.quickIssueItem .top_issue .list > div .per em{
+  @apply not-italic font-bold
+}
+
+.quickIssueItem .catch_item_list{
+  @apply w-full mt-10 flex flex-col gap-[30px]
+}
+.quickIssueItem .catch_item_list .issue_item{
+  @apply w-full relative
+}
+.quickIssueItem .catch_item_list .issue_item > .top{
+  @apply w-full px-[6px] h-6 leading-6 text-[18px] font-bold text-[#5368ff]
+}
+.quickIssueItem .catch_item_list .issue_item .list{
+  @apply w-full flex flex-col gap-[15px] rounded-[16px] border-[#ededed] border-[1px] p-[25px_20px] mt-2.5 relative overflow-hidden
+}
+.quickIssueItem .catch_item_list .issue_item .list > div{
+  @apply w-full border-t-[1px] border-[#ededed] pt-[15px]
+}
+.quickIssueItem .catch_item_list .issue_item .list > div:first-child{
+  @apply border-transparent pt-0
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .top{
+  @apply flex w-full flex-col
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .top .num{
+  @apply block text-[#969696] text-[11px]
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .top .obj{
+  @apply flex w-full mt-[5px] gap-2 items-center
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .top .obj .txt{
+  @apply h-6 leading-6 block text-[16px] text-[#141414] font-medium
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .top .obj .bullet{
+  @apply  w-[58px] h-[21px] flex justify-center items-center text-[12px] font-medium rounded-[4px]
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .top .obj .bullet.up{
+  @apply bg-[#FBEBEB] text-[#E81A1A]
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .top .obj .bullet.dn{
+  @apply bg-[#E7F0FF] text-[#225CFF]
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .top .obj .bullet.mid{
+  @apply bg-[#EDEDED] text-[#666]
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .info{
+  @apply flex w-full gap-2 justify-between mt-2
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .info > div{
+  @apply flex gap-2 items-center h-6
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .info > div span{
+  @apply text-[12px] text-[#999]
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .info > div em{
+  @apply text-[16px] text-[#666] not-italic font-bold
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .info > div:last-child em.up{
+  @apply text-[#E81A1A]
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .info > div:last-child em.dn{
+  @apply text-[#225CFF]
+}
+.quickIssueItem .catch_item_list .issue_item .list > div .info > div:last-child em.mid{
+  @apply text-black
+}
+
+.quickIssueItem .catch_item_list .more{
+  @apply w-full 
+}
+.quickIssueItem .catch_item_list .more button{
+  @apply w-full rounded-[4px] h-[45px] border-[1px] border-[#dfe3e7] bg-[#f8f8f8] gap-[2px] flex justify-center items-center text-[14px] text-[#666]
+}
+.quickIssueItem .catch_item_list .issue_item .list .notJoinBox{
+  @apply absolute inset-0 w-full h-full bg-[#2b324a] bg-opacity-40 hidden justify-center items-center flex-col gap-[15px] backdrop-blur-sm
+}
+.quickIssueItem .catch_item_list .issue_item .list.notJoin .notJoinBox *{
+  @apply blur-none !important
+}
+.quickIssueItem .catch_item_list .issue_item .list.notJoin .notJoinBox{
+  @apply flex
+}
+.quickIssueItem .catch_item_list .issue_item .list .notJoinBox span{
+  @apply text-center text-[14px] font-medium text-white leading-[21px]
+}
+.quickIssueItem .catch_item_list .issue_item .list .notJoinBox button{
+  @apply p-[10px_20px] rounded-full bg-[#5368ff] text-[14px] font-bold text-white
+}

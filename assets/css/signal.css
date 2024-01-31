@@ -1,0 +1,125 @@
+/* search */
+.search{
+  @apply py-5 px-[25px] w-full block h-[80px] relative
+}
+.search.search-top{
+  @apply bg-[#333340]
+}
+.search input[type="text"]{
+  @apply w-full h-10 rounded-full bg-white border-[1px] border-[#5368ff] pl-2 pr-8 text-center
+  placeholder:text-[#999] placeholder:text-[13px] placeholder:tracking-[-0.325px]
+}
+.search button{
+  @apply absolute top-7 right-[42px]
+}
+
+.item_info_catch{
+  @apply block w-full h-auto bg-[#e8eaec] pt-5 pb-0 relative
+}
+.item_info_catch .item_info{
+  @apply w-full flex flex-col gap-[6px] px-5
+}
+.item_info_catch .item_info .top{
+  @apply flex w-full gap-3 items-center
+}
+.item_info_catch .item_info .top .item{
+  @apply text-[18px] text-black font-medium
+}
+.item_info_catch .item_info .top .info{
+  @apply flex gap-2 items-center
+}
+.item_info_catch .item_info .top .info span{
+  @apply text-[12px] text-[#666] flex gap-2 items-center
+  after:w-[1px] after:h-2.5 after:bg-[#c6c6c6] after:content-[''] after:block
+}
+.item_info_catch .item_info .top .info span:last-child{
+  @apply after:hidden;
+}
+.item_info_catch .item_info .price{
+  @apply flex w-full h-6 gap-4 items-center
+}
+.item_info_catch .item_info .price strong{
+  @apply text-[#E81A1A] text-[24px] font-bold
+}
+.item_info_catch .item_info .price span{
+  @apply text-[16px] font-medium text-[#e81a1a]
+}
+.item_info_catch .item_card{
+  @apply w-full mt-4
+}
+.item_info_catch .item_card .swiper-wrapper{
+  @apply w-full pb-10 
+}
+
+.item_info_catch .item_card .card{
+  @apply w-full flex justify-center
+}
+.item_info_catch .item_card .card > div{
+  @apply w-[calc(100%-40px)] bg-white p-5 rounded-[16px] relative shadow-card
+}
+.item_info_catch .item_card .card strong{
+  @apply block h-6 leading-6 text-[16px] text-[#333] font-bold
+}
+.item_info_catch .item_card .card .list{
+  @apply w-full mt-4 flex flex-col
+}
+.item_info_catch .item_card .card .list div{
+  @apply w-full h-6 flex gap-1 items-center before:content-["\00b7"] before:w-2 before:text-center before:font-bold before:text-[18px] before:rounded-full before:overflow-hidden
+}
+.item_info_catch .item_card .card .list div .time{
+  @apply text-[14px] tracking-[-0.5px] leading-6 text-[#141414] w-9 text-center
+}
+.item_info_catch .item_card .card .list div .con{
+  @apply block w-[calc(100%-44px)] text-[14px] tracking-[-0.5px] leading-6 text-[#141414] truncate
+}
+.item_info_catch .item_card .card .date{
+  @apply absolute top-[22px] right-5 leading-5 text-[13px] text-[#969696]
+}
+
+.item_info_catch .item_card .swiper-pagination{
+  @apply bottom-5 flex h-2 gap-1 items-center justify-center
+}
+.item_info_catch .item_card .swiper-pagination .swiper-pagination-bullet{
+  @apply w-2 h-1 bg-[#7e8286] rounded-[1px] m-0
+}
+.item_info_catch .item_card .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  @apply w-5 h-1 bg-black
+}
+
+.signal_alarm_banner{
+  @apply w-full p-[30px_20px]
+}
+.signal_alarm_banner .banner{
+  @apply w-full rounded-[16px] p-[25px_15px_15px] 
+}
+.signal_alarm_banner .banner{
+  background:#6f68ef url('~/assets/img/vi_banner.png') no-repeat 210px 66px;
+
+}
+.signal_alarm_banner .banner .visual{
+  @apply flex w-full flex-col gap-4
+}
+.signal_alarm_banner .banner .visual strong{
+  @apply block w-full h-7 leading-7 text-[20px] font-medium text-white text-center
+}
+.signal_alarm_banner .banner .visual span{
+  @apply text-[18px] leading-6 font-medium text-white
+}
+.signal_alarm_banner .banner .visual span em{
+  @apply not-italic font-bold text-[#f7ff98]
+}
+.signal_alarm_banner .banner .list{
+  @apply mt-4 bg-white w-full rounded-[10px] p-[15px_17px] flex flex-col gap-3
+}
+.signal_alarm_banner .banner .list > div{
+  @apply flex w-full gap-2 items-center
+}
+.signal_alarm_banner .banner .list > div span.date{
+  @apply w-10 block text-[14px] text-[#666]
+}
+.signal_alarm_banner .banner .list > div span.obj{
+  @apply block w-[calc(100%-156px)] text-[#141414] font-medium text-[15px] truncate
+}
+.signal_alarm_banner .banner .list > div span.per{
+  @apply w-[100px] px-[5px] flex items-center justify-center text-[13px] font-medium text-[#e81a1a] bg-[#FDECEC] rounded-[4px]
+}

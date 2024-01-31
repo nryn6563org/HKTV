@@ -1,0 +1,94 @@
+.offcanvas-bottom {
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:475px;
+  background:#fff;
+  z-index:999;
+  transform: translateY(100%);
+  transition: transform 0.35s ease-in-out;
+  z-index:20;
+  border-radius:16px 16px 0 0;
+  padding:12px 20px 0;
+}
+.offcanvas-open .offcanvas-bottom{
+  transform: translateY(0);
+}
+.offcanvas-overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#000;
+  opacity: 0;
+  transition:opacity 0.25s ease-in-out;
+  display:none
+}
+.offcanvas-open .offcanvas-overlay{
+  display:block;
+  opacity: 0.7;
+}
+
+.offcanvas-header{
+  @apply w-full h-[34px] flex relative justify-center items-center pb-2.5
+}
+.offcanvas-header strong{
+  @apply text-[18px] font-bold text-black
+}
+.offcanvas-header button{
+  @apply absolute top-0 right-0
+}
+.offcanvas-body .item-detail{
+  @apply pt-2.5 w-full relative h-auto
+}
+
+.offcanvas-body .item-detail > strong{
+  @apply w-full block h-6 leading-6 text-[16px] font-medium text-[#5368ff]
+}
+.offcanvas-body .item-detail table{
+  @apply w-full  border-collapse border-spacing-0 mt-2.5
+}
+.offcanvas-body .item-detail table thead tr th{
+  @apply border-t-[1px] border-t-[#8c8c8c] border-r-[1px] border-r-[#f0f0f0] border-b-[1px] border-b-[#dcdcdc] bg-[#fafafa] h-[34px] text-[12px]
+}
+.offcanvas-body .item-detail table thead tr th:last-child{
+  @apply border-r-transparent
+}
+.offcanvas-body .item-detail table tbody tr td{
+  @apply border-b-[1px] border-[#f0f0f0] h-[42px]
+}
+.offcanvas-body .item-detail table tbody tr td .info{
+  @apply flex w-full min-h-[42px] items-center p-[10px_5px]
+}
+.offcanvas-body .item-detail table tbody tr td .info span{
+  @apply w-[25%] text-center
+}
+.offcanvas-body .item-detail table tbody tr td .info span em{
+  @apply not-italic text-[11px] block w-full
+}
+.offcanvas-body .item-detail table tbody tr td .info span.up{
+  @apply text-[#E81A1A] !important;
+}
+.offcanvas-body .item-detail table tbody tr td .info span.dn{
+  @apply text-[#225cff] !important;
+}
+.offcanvas-body .item-detail table tbody tr td .info span.date{
+  @apply text-[12px] text-[#8c8c8c]
+}
+.offcanvas-body .item-detail table tbody tr td .info span.obj{
+  @apply text-[14px] text-[#666]
+}
+.offcanvas-body .item-detail table tbody tr td .info span.price{
+  @apply text-[14px] text-[#141414] text-right
+}
+.offcanvas-body .item-detail table tbody tr td .info span.per{
+  @apply text-[14px] text-[#666] text-right
+}
+.offcanvas-body .item-detail table tbody tr td .info_txt{
+  @apply px-2.5 py-0 bg-[#fafafa] w-full h-0 overflow-hidden transition-all duration-700
+}
+.offcanvas-body .item-detail table tbody tr td .info_txt.infoActive{
+  @apply py-[15px] h-auto
+}

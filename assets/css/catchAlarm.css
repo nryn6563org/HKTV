@@ -1,0 +1,57 @@
+.catchAlarm_w{
+  @apply w-full p-[30px_20px_50px]
+}
+.catchAlarm_w > strong{
+  @apply w-full block h-6 leading-6 text-[#292929] font-bold text-[18px]
+}
+.catchAlarm_w > strong em{
+  @apply text-[#8b68ef] not-italic
+}
+
+.catchAlarm_w .dayList{
+  @apply w-full pt-5 flex gap-[30px] flex-col
+}
+
+.catchAlarm_w .dayList .list{
+  @apply flex w-full flex-col gap-2.5
+}
+.catchAlarm_w .dayList .list > strong{
+  @apply block h-6 leading-6 font-medium text-[16px] text-[#5368ff]
+}
+.catchAlarm_w .dayList .list > div{
+  @apply block w-full min-h-[41px] border-[1px] border-[#ededed] rounded-[12px] p-[10px_15px] 
+}
+.catchAlarm_w .dayList .list div a{
+  @apply flex gap-2 items-center justify-between w-full h-full
+}
+.catchAlarm_w .dayList .list div a div{
+  @apply flex items-start gap-2
+}
+.catchAlarm_w .dayList .list div a .time{
+  @apply w-[46px] h-[21px] inline-flex justify-center items-center text-[12px] bg-[#f3f3f3] rounded-[4px] text-[#666] font-medium
+}
+.catchAlarm_w .dayList .list div a .con{
+  @apply block w-[209px] text-[#333] text-[14px] leading-[21px]
+}
+.catchAlarm_w .dayList .list div a .drt{
+  @apply flex h-full items-center w-fit
+}
+
+.catchAlarm_w .dayList .more{
+  @apply w-full 
+}
+.catchAlarm_w .dayList .more button{
+  @apply w-full rounded-[4px] h-[45px] border-[1px] border-[#dfe3e7] bg-[#f8f8f8] gap-[2px] flex justify-center items-center text-[14px] text-[#666]
+}
+
+.catchAlarm_w .banner{
+  @apply pt-5 pb-2.5
+}
+.catchAlarm_w .banner button{
+  @apply w-full h-[50px] rounded-[10px] bg-[#F1F3FF] relative flex items-center justify-center gap-2 text-[#564df4] text-[16px] tracking-[-0.24px]
+  after:w-6 after:h-6 after:rounded-full after:bg-[#e2e6ff] after:flex after:items-center after:justify-center
+  after:content-['\003E'] after:text-[#564DF4] after:text-[13px] after:font-bold
+}
+.catchAlarm_w .banner button em{
+  @apply not-italic font-bold
+}

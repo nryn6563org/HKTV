@@ -1,0 +1,9 @@
+.accodion > div{
+  @apply overflow-hidden
+}
+.accordion-item{
+  @apply w-full p-1 bg-white relative z-20
+}
+.accordion-content{
+  @apply bg-gray-200 relative z-10 h-fit
+}

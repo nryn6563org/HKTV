@@ -1,0 +1,191 @@
+.catch_wrap {
+}
+.catch_tab {
+  @apply w-full h-[42px] flex items-center relative after:absolute after:w-full after:h-[1px] after:bottom-0 after:left-0 after:bg-[#b3b3b3] after:z-[1] bg-[#333340]
+}
+.catch_tab > button{
+  @apply w-1/2 h-full text-[#b3b3b3] font-normal text-[16px] relative
+}
+.catch_tab > button.active{
+  @apply text-white font-bold after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-white after:rounded-[3px] after:z-[2]
+}
+
+.catch_tab_content{}
+.content_one{
+  @apply relative w-full
+}
+.issue_w > .issue_tab_w{ 
+  @apply w-full bg-[#333340] py-5
+}
+/* 이슈 */
+.issue_tab{
+  @apply w-[calc(100%-40px)] mx-auto bg-[#5F5F71] h-10 rounded-[6px] flex
+}
+.issue_tab > a{
+  @apply flex h-10 w-[calc(100%/3)] justify-center items-center gap-[3px] text-[14px] text-[#c1c1c1] transition-all duration-300
+}
+.issue_tab > a.active{
+  @apply bg-[#5368FF] text-white font-bold rounded-[6px]
+}
+.issue_tab > a > em.bullet_new{
+  @apply text-[9px] text-white bg-[#ff3f3f] w-[13px] h-[13px] inline-flex items-center justify-center font-medium rounded-full not-italic
+}
+
+.issue_tab_content{
+  @apply w-full mt-[-1px]
+}
+.quick_catch{
+  @apply w-full px-5 pb-[30px] bg-[#333340]
+}
+
+.day_issue{
+  @apply w-full bg-white pt-[30px] pb-[40px]
+}
+.day_issue > .day{
+  @apply w-[calc(100%-40px)] mx-auto
+}
+.day_issue > .day strong{
+  @apply text-[18px] font-bold text-[#292929] leading-[25px]
+}
+.day_issue > .day strong em{
+  @apply text-[#5368ff] not-italic
+}
+
+.day_issue > .issue_list{
+  @apply pt-5 w-full px-5
+}
+.day_issue > .issue_list  button{
+  @apply px-[14px] py-3 rounded-[8px] bg-[#f0f0f0] text-[#646464] text-[14px]
+}
+.day_issue > .issue_list  button{
+  @apply w-auto !important;
+}
+.day_issue > .issue_list  button.active{
+  @apply bg-[#5368ff] text-white font-bold
+}
+
+.day_issue .banner{
+  @apply p-5
+}
+.day_issue .banner button{
+  @apply w-full h-[50px] rounded-[10px] bg-[#F1F3FF] relative flex items-center justify-center gap-2 text-[#564df4] text-[16px] tracking-[-0.24px]
+  after:w-6 after:h-6 after:rounded-full after:bg-[#e2e6ff] after:flex after:items-center after:justify-center
+  after:content-['\003E'] after:text-[#564DF4] after:text-[13px] after:font-bold
+}
+.day_issue .banner button em{
+  @apply not-italic font-bold
+}
+
+.day_issue .issue_news{
+  @apply w-[calc(100%-40px)] mx-auto bg-[#f8f8f8] rounded-[10px] p-[25px_20px]
+}
+.day_issue .issue_news strong{
+  @apply block text-[#333] font-bold text-[16px] leading-6
+}
+.day_issue .issue_news span{
+  @apply w-full h-[168px] text-[14px] line-clamp-[8] leading-[21px] text-[#4d4d4d] text-ellipsis mt-[15px]
+  
+}
+
+.day_issue .top_issue{
+  @apply rounded-[10px] bg-[#5368ff] p-2.5 w-[calc(100%-40px)] mx-auto mt-5
+}
+.day_issue .top_issue > strong{
+  @apply pt-[5px] w-full text-center leading-6 text-[16px] font-bold text-white block
+}
+.day_issue .top_issue > strong em{
+  @apply not-italic text-[#CBFFF6]
+}
+.day_issue .top_issue .list{
+  @apply w-full mt-2.5 rounded-[10px] bg-white p-3 flex flex-col gap-2.5
+}
+.day_issue .top_issue .list > div{
+  @apply flex w-full gap-[9px] items-center
+}
+.day_issue .top_issue .list > div .date{
+  @apply w-10 text-[13px] text-[#666] block
+}
+.day_issue .top_issue .list > div .obj{
+  @apply w-[118px] line-clamp-1
+}
+.day_issue .top_issue .list > div .per{
+  @apply bg-[#fdecec] w-[100px] p-[3px_5px] flex gap-[2px] rounded-[4px] justify-center items-center text-[13px] text-[#e81a1a]
+}
+.day_issue .top_issue .list > div .per em{
+  @apply not-italic font-bold
+}
+
+.day_issue .issue_item{
+  @apply w-full p-[10px_20px_40px]
+}
+.day_issue .issue_item .top{
+  @apply w-full flex justify-between items-center px-2.5
+}
+.day_issue .issue_item .top .obj{
+  @apply text-[18px] font-bold text-[#141414] leading-[25px]
+}
+.day_issue .issue_item .top .obj em{
+  @apply text-[#5368ff] not-italic
+}
+.day_issue .issue_item .top .date{
+  @apply text-[#8c8c8c] text-[12px] leading-[18px]
+}
+.day_issue .issue_item .top .date em{
+  @apply not-italic
+}
+.day_issue .issue_item .list{
+  @apply w-full border-[1px] rounded-[16px] border-[#ededed] mt-2.5 p-[8px_15px_60px] relative overflow-hidden
+}
+.day_issue .issue_item .list > div{
+  @apply w-full py-3 border-t-[1px] border-[#f5f5f5] flex gap-[7px] items-center
+}
+.day_issue .issue_item .list > div:first-child{
+  @apply border-0
+}
+.day_issue .issue_item .list > div .obj{
+  @apply w-[144px] text-[16px] text-[#141414] font-medium flex gap-[6px] items-center 
+}
+.day_issue .issue_item .list > div .obj .bullet{
+  @apply text-[12px] text-[#5368ff] font-medium border-[1px] border-[#5368ff] w-[37px] h-[24px] inline-flex items-center justify-center rounded-[4px]
+}
+.day_issue .issue_item .list > div.lead .obj .name{
+  @apply w-[calc(100%-43px)] truncate
+}
+.day_issue .issue_item .list > div .obj .name{
+  @apply w-full truncate
+}
+.day_issue .issue_item .list > div .price{
+  @apply w-[64px] text-[14px] text-[#141414] font-medium text-right
+}
+.day_issue .issue_item .list > div .per{
+  @apply w-[66px] h-[25px] flex items-center justify-center rounded-[4px] text-[13px] font-medium
+}
+.day_issue .issue_item .list > div .per.up{
+  @apply bg-[#FDECEC] text-[#E81A1A]
+}
+.day_issue .issue_item .list > div .per.dn{
+  @apply bg-[#E3F1FF] text-[#2073ef]
+}
+.day_issue .issue_item .list .more{
+  @apply absolute bottom-0 left-0 w-full h-[45px] bg-[#f8f8f8] flex justify-center items-center gap-[2px] text-[14px] text-[#666]
+}
+
+.day_issue .issue_item .list.notJoin > div.lead .obj .name, .day_issue .issue_item .list.notJoin > div.lead .price, .day_issue .issue_item .list.notJoin > div.lead .per{
+  @apply blur-sm
+}
+
+.notJoinAlarm{
+  @apply hidden !important
+}
+.notJoinAlarm{
+  @apply absolute inset-0 w-full h-[150px] z-10  flex-col items-center justify-center gap-4 text-center !important;
+}
+.notJoin .notJoinAlarm{
+  @apply flex !important;
+}
+.notJoinAlarm .txt{
+  @apply text-[14px] leading-5 font-medium text-[#333] !important
+}
+.notJoinAlarm button{
+  @apply flex w-[135px] h-10 justify-center items-center rounded-full text-white text-[14px] font-bold bg-[#5368ff]
+}
