@@ -14,7 +14,7 @@
 .content_one{
   @apply relative w-full
 }
-.issue_w > .issue_tab_w{ 
+.issue_w > .issue_tab_w{
   @apply w-full bg-[#333340] py-5
 }
 /* 이슈 */

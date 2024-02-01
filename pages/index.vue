@@ -1,18 +1,39 @@
 <template>
-  <div>
-    아무거나
-    <SampleComp />
+  <div id="container">
+    <div class="catch_wrap">
+      <div class="catch_tab">
+        <button :class="{active: activeTab === 'issue'}" @click="changeTab('issue')">이슈캐치</button>
+        <button :class="{active: activeTab === 'signal'}" @click="changeTab('signal')">신호캐치</button>
+      </div>
+      <!-- catch 탭 -->
+
+      <div class="catch_content">
+        <ContentOne v-show="activeTab === 'issue'"></ContentOne>
+        <ContentTwo v-show="activeTab === 'signal'"></ContentTwo>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import SampleComp from '@/components/SampleComp';
-
+import ContentOne from "~/components/IssueCatch/ContentOne";
+import ContentTwo from "~/components/SignalCatch/ContentTwo";
 export default {
   components: {
-    SampleComp
+    ContentOne,
+    ContentTwo
   },
   layout: 'defaultLayout',
+  data() {
+    return {
+      activeTab: "issue", // Default active tab
+    };
+  },
+  methods: {
+    changeTab(tab) {
+      this.activeTab = tab;
+    },
+  },
 };
 </script>
 

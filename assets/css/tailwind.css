@@ -4,5 +4,5 @@
 @import 'tailwindcss/utilities';
 
 *{
-  @apply antialiased
+  @apply antialiased font-spoqa !important
 }

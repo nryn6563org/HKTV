@@ -17,6 +17,14 @@ const config = {
         rel: "stylesheet",
         href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
       },
+      {
+        rel: "stylesheet",
+        href: "//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+      },
     ],
   },
 

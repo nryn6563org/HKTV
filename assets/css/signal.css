@@ -109,17 +109,242 @@
   @apply not-italic font-bold text-[#f7ff98]
 }
 .signal_alarm_banner .banner .list{
-  @apply mt-4 bg-white w-full rounded-[10px] p-[15px_17px] flex flex-col gap-3
+  @apply mt-4 bg-white w-full h-[84px] rounded-[10px] p-[15px_17px] flex flex-col gap-3
 }
-.signal_alarm_banner .banner .list > div{
-  @apply flex w-full gap-2 items-center
+.signal_alarm_banner .banner .list .signalList{
+  @apply w-full
 }
-.signal_alarm_banner .banner .list > div span.date{
+.signal_alarm_banner .banner .list .swiper-slide{
+  @apply flex w-full h-[22px] gap-2 items-center
+}
+.signal_alarm_banner .banner .list .swiper-slide span.date{
   @apply w-10 block text-[14px] text-[#666]
 }
-.signal_alarm_banner .banner .list > div span.obj{
+.signal_alarm_banner .banner .list .swiper-slide span.obj{
   @apply block w-[calc(100%-156px)] text-[#141414] font-medium text-[15px] truncate
 }
-.signal_alarm_banner .banner .list > div span.per{
+.signal_alarm_banner .banner .list .swiper-slide span.per{
   @apply w-[100px] px-[5px] flex items-center justify-center text-[13px] font-medium text-[#e81a1a] bg-[#FDECEC] rounded-[4px]
 }
+
+.signal_catch_w{
+  @apply relative w-full mt-2.5 px-5 mb-5
+}
+.signal_catch_w .top {
+  @apply block w-full
+}
+.signal_catch_w .top .title{
+  @apply flex w-full justify-between items-center relative
+}
+.signal_catch_w .top .title strong{
+  @apply text-[16px] text-[#333] font-bold
+}
+.signal_catch_w .top .title .btn{
+  @apply flex gap-2.5 h-[28px]
+}
+.signal_catch_w .top button.setting{
+  @apply flex w-fit h-[28px] items-center justify-center gap-1 p-[4px_7px] border-[1px] border-[#e7e7e7] rounded-full text-[13px] text-[#666]
+}
+.signal_catch_w .top button.alarm{
+  @apply flex w-[28px] h-[28px] rounded-full border-[1px] border-[#e7e7e7] justify-center items-center overflow-hidden transition-all duration-300
+}
+.signal_catch_w .top button.alarm.active{
+  @apply border-transparent bg-[#5368ff]
+}
+
+.signal_catch_w .title .alarm_popOver{
+  @apply absolute bottom-[-34px] right-0 flex box-content w-fit h-6 py-[1px] rounded-full bg-[#5368ff] px-[30px] flex justify-center items-center
+}
+.signal_catch_w .title .alarm_popOver svg{
+  @apply absolute top-[-8px] right-[9px]
+}
+.signal_catch_w .title .alarm_popOver span{
+  @apply text-[13px] text-white
+}
+.signal_catch_w .title .alarm_popOver span em{
+  @apply not-italic text-[#fffa7b] font-medium
+}
+
+
+.signal_catch_w .card{
+  @apply w-full mt-2.5 flex p-5 bg-gradient-to-t from-[#323243] to-[#43435A] rounded-[12px] shadow-signal items-center gap-6
+}
+.signal_catch_w .card .signal{
+  @apply flex w-[70px] h-[70px] rounded-full justify-center items-center leading-6 text-[18px] text-white font-bold
+}
+.signal_catch_w .card .signal.sig01{
+  @apply bg-[#FC525B]
+}
+.signal_catch_w .card .signal.sig02{
+  @apply bg-[#517CE5]
+}
+.signal_catch_w .card .signal.sig03{
+  @apply bg-[#7EB1FC]
+}
+.signal_catch_w .card .signal.sig04{
+  @apply bg-[#2FCCAF]
+}
+.signal_catch_w .card .signal.sig05{
+  @apply bg-[#827DDC]
+}
+.signal_catch_w .card .signal-info{
+  @apply flex flex-col w-[calc(100%-94px)]
+}
+.signal_catch_w .card .signal-info div{
+  @apply w-full min-h-[22px] leading-[22px] text-[15px] text-[#bfbfbf]
+}
+.signal_catch_w .card .signal-info div em{
+  @apply text-white not-italic
+}
+.signal_catch_w .card .signal-info div em.up{
+  @apply text-[#ffa3a3] 
+}
+.signal_catch_w .card .signal-info div.txt{
+  @apply text-white
+}
+.signal_catch_w .list_w{
+  @apply w-full mt-[30px] relative
+}
+.signal_catch_w .list_w.notJoin{
+  @apply overflow-hidden rounded-3xl
+}
+.signal_catch_w .list_w .notJoinBox{
+  @apply absolute inset-0 bg-[url('~/assets/img/bg-paper.png')] bg-no-repeat bg-[length:320px_100%] hidden
+}
+.signal_catch_w .list_w.notJoin .notJoinBox{
+  @apply flex w-full flex-col items-center justify-center gap-5
+}
+.signal_catch_w .list_w .notJoinBox .txt{
+  @apply w-full text-center text-white text-[14px] font-medium leading-5
+}
+.signal_catch_w .list_w .notJoinBox .txt em{
+  @apply not-italic text-[#ff0000]
+}
+.signal_catch_w .list_w .notJoinBox .btn{
+  @apply flex w-full justify-center
+}
+.signal_catch_w .list_w .notJoinBox .btn button{
+  @apply box-content w-fit h-fit rounded-full p-[10px_30px] text-[16px] text-white font-bold flex flex-col bg-[#5368ff]
+}
+.signal_catch_w .list_w .notJoinBox .btn button.complete{
+  @apply rounded-[8px]
+}
+.signal_catch_w .list_w .notJoinBox .btn button em{
+  @apply not-italic text-[12px] font-normal block
+}
+.signal_catch_w .list_w .tab{
+  @apply flex w-full bg-[#ebebeb] rounded-[6px]
+}
+.signal_catch_w .list_w .tab button{
+  @apply w-1/2 h-10 bg-[#EBEBEB] flex justify-center items-center text-[14px] text-[#999] rounded-[6px]
+}
+.signal_catch_w .list_w .tab button.active{
+  @apply bg-white border-[1px] border-[#5368ff] rounded-[6px] text-[#5368ff]
+}
+.signal_catch_w .list_w .tabContent{
+  @apply w-full my-5
+}
+.signal_catch_w .list_w .tabContent .chart{
+  @apply block w-full border-[1px] border-[#f1f1f1] rounded-[16px] p-[10px_5px]
+}
+.signal_catch_w .list_w .tabContent .list{
+  @apply block w-full mt-5 border-t-[1px] border-[#8C8C8C]
+}
+.signal_catch_w .list_w .tabContent .list .list-header{
+  @apply flex items-center w-full h-[34px] bg-[#FAFAFA] border-b-[1px] border-[#dcdcdc]
+}
+.signal_catch_w .list_w .tabContent .list .list-header span{
+  @apply border-l-[1px] border-[#F0F0F0] text-[12px] text-[#080808] h-full flex w-full justify-center items-center
+}
+.signal_catch_w .list_w .tabContent .list .list-header span:first-child{
+  @apply border-l-transparent
+}
+.signal_catch_w .list_w .tabContent .list .list-header span.date{
+  @apply w-[100px]
+}
+.signal_catch_w .list_w .tabContent .list .list-header span.signal{
+  @apply w-[58px]
+}
+.signal_catch_w .list_w .tabContent .list .list-header span.price{
+  @apply w-[80px]
+}
+.signal_catch_w .list_w .tabContent .list .list-header span.per{
+  @apply w-[82px]
+}
+.signal_catch_w .list_w .tabContent .list .list-body div{
+  @apply flex w-full h-[42px] items-center border-b-[1px] border-[#f0f0f0]
+}
+.signal_catch_w .list_w .tabContent .list .list-body div span{
+  @apply block text-[14px] text-center
+}
+.signal_catch_w .list_w .tabContent .list .list-body div span.date{
+  @apply w-[100px] text-[#8c8c8c]
+}
+.signal_catch_w .list_w .tabContent .list .list-body div span.signal{
+  @apply w-[58px] text-[#666]
+}
+.signal_catch_w .list_w .tabContent .list .list-body div span.price{
+  @apply w-[80px] text-right px-2 text-[#141414]
+}
+.signal_catch_w .list_w .tabContent .list .list-body div span.per{
+  @apply w-[82px] text-right px-2
+}
+.signal_catch_w .list_w .tabContent .list .list-body div span.up{
+  @apply text-[#E81A1A]
+}
+.signal_catch_w .list_w .tabContent .list .list-body div span.dn{
+  @apply text-[#225CFF]
+}
+.signal_catch_w .list_w .tabContent .list .more{
+  @apply w-full mt-5
+}
+.signal_catch_w .list_w .tabContent .list .more button{
+  @apply w-full h-[45px] border-[1px] border-[#dfe3e7] bg-[#f8f8f8] gap-[2px] flex justify-center items-center text-[14px] text-[#666] rounded-[4px]
+}
+
+.ainews{
+  @apply w-full mt-5 pb-[50px] px-5
+}
+.ainews strong{
+  @apply block w-full text-[16px] font-bold leading-6 text-[#333]
+}
+.ainews .list{
+  @apply flex w-full flex-col gap-3 mt-4
+}
+.ainews .list > div{
+  @apply flex w-full flex-col gap-2 pt-3 border-t-[1px] border-[#f0f0f0]
+}
+.ainews .list > div:first-child{
+  @apply border-t-transparent pt-0
+}
+.ainews .list > div .obj{
+  @apply flex items-center w-full leading-6 text-[16px] text-[#333] gap-2.5
+}
+.ainews .list > div .obj .bullet_ai{
+  @apply w-[14px] block
+}
+.ainews .list > div .obj .con{
+  @apply w-[calc(100%-24px)] text-[16px] text-[#333] truncate
+}
+.ainews .list > div.n_news .obj .con{
+  @apply w-[calc(100%-43px)]
+}
+.ainews .list > div .obj .bullet_new{
+  @apply w-[33px] block text-[#e73b84] text-[13px] not-italic
+}
+.ainews .more{
+  @apply w-full mt-5
+}
+.ainews .more button{
+  @apply w-full h-[45px] border-[1px] border-[#dfe3e7] bg-[#f8f8f8] gap-[2px] flex justify-center items-center text-[14px] text-[#666] rounded-[4px]
+}
+.ainews .list > div .info{
+  @apply flex gap-2 w-full
+}
+.ainews .list > div .info span{
+  @apply text-[#999] text-[13px] flex items-center
+}
+.ainews .list > div .info span:first-child{
+  @apply after:content-[''] after:w-[1px] after:h-[11px] after:bg-[#d7d7d7] after:ml-2 after:block
+}
+
