@@ -12,7 +12,7 @@
         :class="contentClass"
         @click.stop
       >
-      <div v-if="hasHeader" class="modal-header">
+        <div v-if="hasHeader" class="modal-header">
           <slot name="header"></slot>
         </div>
         <div v-if="hasBody" class="modal-body">
@@ -32,6 +32,10 @@ const ANIMATE_BOUNCE_OUT = 'animate__bounceOutUp';
 
 export default {
   props: {
+    modalId: {
+      type: String,
+      required: true,
+    },
     showModal: {
       type: Boolean,
       required: true,

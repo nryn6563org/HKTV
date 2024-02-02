@@ -27,6 +27,7 @@ export default {
   data() {
     return {
       activeTab: "issue", // Default active tab
+      showModal: false,
     };
   },
   methods: {

@@ -4,6 +4,9 @@
 .issueCard{
   @apply bg-white w-full mx-auto rounded-[10px] overflow-hidden p-[15px_10px]
 }
+.issueCard.bnr{
+  @apply p-0
+}
 .issueCard .top{
   @apply w-full relative h-[95px]
 }

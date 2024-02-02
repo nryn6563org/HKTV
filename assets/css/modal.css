@@ -1,15 +1,266 @@
 .modal {
-  @apply fixed w-full h-full flex justify-center items-center inset-0 bg-black bg-opacity-60 z-20;
+  @apply fixed w-full h-full flex justify-center items-center inset-0 bg-black bg-opacity-80 z-20;
 }
 .modal-content {
-  @apply relative w-[200px] h-[150px] bg-white rounded-xl flex flex-col justify-between;
+  @apply relative bg-white rounded-xl flex flex-col justify-between;
 }
 .modal-header{
   @apply relative w-full flex justify-center items-center;
 }
 .modal-header .modal-close{
-  @apply absolute top-0 right-2
-}
+  }
 .modal-footer{
   @apply relative w-full flex justify-center items-center gap-2.5;
+}
+
+/* alarm_modal */
+#alarm_modal .modal-content{
+  @apply w-[calc(100%-20px)]
+}
+#alarm_modal .modal-content .modal-header{
+  @apply flex w-full h-[48px] items-center px-5 justify-end
+}
+#alarm_modal .modal-content .modal-body{
+  @apply w-full px-5
+}
+#alarm_modal .modal-content .modal-body .txt{
+  @apply block w-full text-center leading-6 pb-2.5
+}
+#alarm_modal .modal-content .modal-body .txt span{
+  @apply block w-full text-center text-[16px] text-[#141414] font-medium
+}
+#alarm_modal .modal-content .modal-body .txt em{
+  @apply block w-full pt-6 text-[16px] text-[#666] not-italic
+}
+#alarm_modal .modal-content .modal-footer{
+  @apply w-full p-5
+}
+#alarm_modal .modal-content .modal-footer button{
+  @apply w-full h-10 flex justify-center items-center rounded-[6px] text-white text-[16px] font-medium bg-[#5368ff]
+}
+
+/* item-sch */
+.item-sch .modal-content{
+  @apply w-[calc(100%-20px)] max-h-[calc(100%-40px)]
+}
+.item-sch .modal-content .modal-header{
+  @apply relative flex w-full justify-center py-2.5 px-5
+}
+.item-sch .modal-content .modal-header strong{
+  @apply text-[18px] font-bold text-black
+}
+.item-sch .modal-content .modal-header button{
+  @apply absolute top-2.5 right-5
+}
+.item-sch .modal-content .modal-body{
+  @apply p-[20px_20px_80px] w-full max-h-[calc(100%-47px)] overflow-y-scroll
+}
+
+.item-sch .modal-content .modal-body .sch-modal-wrap{
+  @apply relative w-full
+}
+.sch-modal-wrap .sch-bar{
+  @apply relative flex justify-center w-full
+}
+.sch-modal-wrap .sch-bar input{
+  @apply h-10 w-full rounded-full border-[1px] border-[#5368ff] text-center text-[16px] text-black
+  placeholder:text-[14px] placeholder:text-[#999] placeholder:tracking-[-0.35px]
+}
+.sch-modal-wrap .sch-bar button{
+  @apply absolute top-2 right-[26px]
+}
+.sch-modal-wrap .sch-latest{
+  @apply w-full pt-5
+}
+.sch-modal-wrap .sch-latest strong{
+  @apply block text-[16px] text-[#333] font-bold leading-6 pb-4
+}
+.sch-modal-wrap .sch-latest .list{
+  @apply flex flex-col w-full gap-2.5
+}
+.sch-modal-wrap .sch-latest .list .item{
+  @apply flex flex-col w-full px-2.5 gap-2.5
+}
+.sch-modal-wrap .sch-latest .list .item div{
+  @apply flex w-full h-6 leading-6 items-center
+}
+.sch-modal-wrap .sch-latest .list .item div span{
+  @apply text-[16px] text-[#333]
+}
+.sch-modal-wrap .sch-latest .list .item div em{
+  @apply not-italic text-[16px] text-[#999] pl-2
+}
+.sch-modal-wrap .sch-latest .list .empty{
+  @apply py-[60px] w-full flex justify-center text-[16px] text-[#666]
+}
+.sch-modal-wrap .sch-latest .list .empty em{
+  @apply text-[#5368ff] not-italic
+}
+
+.setting-list{
+  @apply w-full pt-[10px]
+}
+.setting-list .btn-group{
+  @apply w-full flex justify-between py-5
+}
+.setting-list .list{
+  @apply w-full 
+}
+.setting-list .list .txt{
+  @apply flex w-full gap-2 items-center justify-center
+}
+.setting-list .list .txt span{
+  @apply text-[13px] text-[#666] leading-5
+}
+.setting-list .list .item-group{
+  @apply block w-full pt-2.5
+}
+.setting-list .list .item-group .item-header{
+  @apply flex items-center w-full border-y-[1px] border-[#bdbdbd] h-[36px] bg-[#f5f5f5] px-2.5
+}
+.setting-list .list .item-group .item-header > div{
+  @apply flex w-1/2 justify-center text-[14px] text-[#666] gap-8 items-center
+}
+.setting-list .list .item-group .item-header > div:last-child{
+  @apply justify-end
+}
+.setting-list .list .item-group .item-header > div em{
+  @apply text-[#ff0000] not-italic
+}
+.setting-list .list .item-group .item-body{
+  @apply block w-full
+}
+.setting-list .list .item-group .item-body > div{
+  @apply flex w-full py-3 border-b-[1px] border-[#f0f0f0] px-2.5
+}
+.setting-list .list .item-group .item-body > div .item-info{
+  @apply flex flex-col w-1/2 gap-[2px]
+}
+.setting-list .list .item-group .item-body > div .item-info .obj{
+  @apply w-full text-[16px] text-[#333] font-medium truncate
+}
+.setting-list .list .item-group .item-body > div .item-info .info{
+  @apply flex gap-2 text-[13px] text-[#333]
+}
+.setting-list .list .item-group .item-body > div .item-dlt{
+  @apply flex gap-5 items-center justify-end w-full
+}
+.chkbox{
+  @apply relative inline-block
+}
+.chkbox input{
+  @apply absolute top-0 left-[-9999em]
+}
+.chkbox label .notChecked{
+  @apply block;
+}
+.chkbox label.chkon .notChecked{
+  @apply hidden;
+}
+.chkbox label .checked{
+  @apply hidden;
+}
+.chkbox label.chkon .checked{
+  @apply block;
+}
+
+.aiCatchsv{}
+.aiCatchsv .modal-content{
+  @apply w-[calc(100%-20px)] h-[calc(100%-40px)] overflow-hidden
+}
+.aiCatchsv .modal-content .modal-body{
+  @apply relative w-full h-full overflow-hidden
+}
+.aiCatchsv .modal-content .modal-body .top{
+  @apply w-full bg-[#5368ff] p-[12px_17px_20px] bg-[url('~/assets/img/vi_banner.png')] bg-no-repeat bg-[235px_65px] bg-[length:86px_78px]
+}
+.aiCatchsv .modal-content .modal-body .top button{
+  @apply absolute top-3 right-[18px]
+}
+.aiCatchsv .modal-content .modal-body .top .bullet{
+  @apply absolute top-5 left-5 w-[125px] h-[30px] flex justify-center 
+  items-center rounded-full bg-[#20198c] text-[16px] text-white font-medium
+}
+.aiCatchsv .modal-content .modal-body .top .txt{
+  @apply pt-[60px] text-[22px] text-white font-medium leading-[31px]
+}
+.aiCatchsv .modal-content .modal-body .top .txt em{
+  @apply text-[#FFFA7B] not-italic
+}
+.aiCatchsv .modal-content .modal-body .top .txt span{
+  @apply text-[24px]
+}
+.aiCatchsv .modal-content .modal-body .top .price{
+  @apply block w-full mt-5 py-4 px-3 rounded-[16px] bg-[#1E368C80] bg-opacity-50
+}
+.aiCatchsv .modal-content .modal-body .top .price > div:first-child{
+  @apply block w-full leading-6 text-[18px] font-medium text-white text-center
+}
+.aiCatchsv .modal-content .modal-body .top .price > div:first-child span{
+  @apply block
+}
+.aiCatchsv .modal-content .modal-body .top .price > div:first-child em{
+  @apply text-[#fffa7b] font-bold not-italic
+}
+.aiCatchsv .modal-content .modal-body .top .price > div:last-child{
+  @apply block w-full text-center mt-2 text-[18px] text-white leading-[30px]
+}
+.aiCatchsv .modal-content .modal-body .top .price > div:last-child em{
+  @apply text-[24px] font-bold not-italic
+}
+.aiCatchsv .modal-content .modal-body .cont{
+  @apply w-full h-[calc(100%-295px)] p-[25px_20px_0] flex flex-col gap-6 overflow-y-scroll
+}
+.aiCatchsv .modal-content .modal-body .cont .issue strong, 
+.aiCatchsv .modal-content .modal-body .cont .signal strong{
+  @apply w-[120px] h-[36px] flex justify-center items-center  gap-2 text-[16px] font-bold rounded-full
+}
+.aiCatchsv .modal-content .modal-body .cont .issue strong{
+  @apply bg-[#f1f3ff] text-[#5368ff]
+}
+.aiCatchsv .modal-content .modal-body .cont .signal strong{
+  @apply bg-[#F6F1FF] text-[#8B68EF]
+}
+
+.aiCatchsv .modal-content .modal-body .cont .list{
+  @apply flex flex-col w-full pt-5 pl-2.5 gap-4
+}
+.aiCatchsv .modal-content .modal-body .cont .list span{
+  @apply block w-full min-h-[28px] leading-[28px] text-[16px]
+  text-[#141414] pl-[37px] bg-[url('~/assets/img/cOff.png')] bg-[left_top] bg-[length:27px_27px] 
+  bg-no-repeat font-medium
+}
+.aiCatchsv .modal-content .modal-body .cont .list span.on{
+  @apply bg-[url('~assets/img/cOn.png')]
+}
+.aiCatchsv .modal-content .modal-body .cont .list span em{
+  @apply text-[#666] text-[14px] not-italic
+}
+.aiCatchsv .modal-content .modal-body .cont .list span svg{
+  @apply flex justify-center items-center fill-[#5368ff] rounded-full
+}
+.aiCatchsv .modal-content .modal-body .cont .txt{
+  @apply block w-full mt-[5px] rounded-[16px] bg-[#f5f5f5] p-5
+}
+.aiCatchsv .modal-content .modal-body .cont .txt strong{
+  @apply block w-full text-center text-[16px] text-[#333] font-bold leading-6
+}
+.aiCatchsv .modal-content .modal-body .cont .txt div{
+  @apply flex w-full pt-3 flex-col
+}
+.aiCatchsv .modal-content .modal-body .cont .txt div:first-child{
+  @apply mt-4
+}
+.aiCatchsv .modal-content .modal-body .cont .txt div span{
+  @apply flex gap-1 w-full items-start text-[#333] text-[15px] pb-2 min-h-[22px] leading-[22px]
+}
+.aiCatchsv .modal-content .modal-body .cont .txt div em{
+  @apply pl-5 leading-5 min-h-[20px] w-full flex gap-2 text-[14px] text-[#666] not-italic
+  before:content-['\00b7'] before:text-[20px] before:font-bold before:text-[#999]
+}
+.aiCatchsv .modal-content .modal-footer{
+  @apply p-5 w-full
+}
+.aiCatchsv .modal-content .modal-footer button{
+  @apply w-full h-10 rounded-[6px] font-bold flex items-center justify-center bg-[#5368ff] text-[16px] text-white
 }

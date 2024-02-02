@@ -190,10 +190,12 @@
       <!-- btn -->
     </div>
     <!-- 비회원 -->
+    
   </div>
   <!-- 최근3&12개월 -->
 </template>
 <script>
+
 export default {
   data() {
     return {

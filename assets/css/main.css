@@ -1,3 +1,10 @@
 #container{
   @apply top-[-1px] relative
 }
+
+*.up{
+  @apply text-[#e81a1a]
+}
+*.dn{
+  @apply text-[#225CFF]
+}

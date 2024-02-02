@@ -5,12 +5,8 @@
 .search.search-top{
   @apply bg-[#333340]
 }
-.search input[type="text"]{
-  @apply w-full h-10 rounded-full bg-white border-[1px] border-[#5368ff] pl-2 pr-8 text-center
-  placeholder:text-[#999] placeholder:text-[13px] placeholder:tracking-[-0.325px]
-}
-.search button{
-  @apply absolute top-7 right-[42px]
+.search > button{
+  @apply flex w-full h-10 rounded-full bg-white border-[1px] border-[#5368ff] justify-center gap-5 items-center text-[#999] text-[13px] tracking-[-0.325px]
 }
 
 .item_info_catch{

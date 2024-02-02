@@ -1,0 +1,16 @@
+button.btn{
+  @apply flex h-[34px] border-[1px] rounded-[6px] 
+  text-[14px] font-medium w-fit justify-center items-center
+  }
+  button.btn.btn-primary{
+  @apply  border-[#5368ff] text-[#5368ff]
+}
+button.btn.btn-default{
+  @apply  border-[#999] text-[#666]
+}
+button.btn.btn-sm{
+  @apply p-[0_8px_0_4px] gap-[3px] border-[#d6d6d6] !important
+}
+.btn-group > button{
+  @apply w-[80px]
+}
