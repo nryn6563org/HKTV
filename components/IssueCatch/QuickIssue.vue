@@ -728,7 +728,7 @@ export default {
   data() {
     return {
       modals: {
-        alarm: false,
+        catchJoin: false,
       },
       isOffcanvasOpen: false,
       isAccodianOpen: false,

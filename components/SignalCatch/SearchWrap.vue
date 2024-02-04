@@ -125,7 +125,7 @@ export default {
     return {
       showModal: false,
       modals: {
-        alarm: false,
+        itemSearch: false,
       },
     };
   },
